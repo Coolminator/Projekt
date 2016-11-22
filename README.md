@@ -1,4 +1,4 @@
-# Projekt
+# Välkommen
 Hej! Carlos Soto heter jag och är 24 år gammal. Jag är en nyutexaminerad systemvetare bosatt i Örebro och jag söker jobb som front-end utvecklare med AngularJS som grund.
 
 # Projekt: Hemsida
