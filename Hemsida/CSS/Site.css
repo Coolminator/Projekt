@@ -1,0 +1,350 @@
+﻿body{    
+    margin:0;
+    padding:0;
+    
+}
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;   
+    z-index: 1;
+    
+}
+.video{
+    background-image: url('../Images/bgwall.png');
+    background-size: cover;
+    position: absolute;
+    width: 100%;       
+}
+.logo {
+    position: absolute;
+    top:40%;
+    left: 50%;        
+    transform: translate(-50%,-50%);
+    font-size:60px;
+    font: sans-serif;
+    color: white;
+    text-transform: uppercase;
+    border-width: 6px;
+    border-style: solid;    
+    padding: 20px;
+}
+.darrow{
+    position: absolute;
+    font-size: 50px;
+    top: 70%;
+    left: 50%;        
+    transform: translate(-50%,-50%);
+    color: white;
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+.darrow:visited, .darrow:visited, .darrown:active {
+    color: white;
+}
+.darrow:hover{
+    transform: translate(-50%,-20%);
+}
+.uarrow{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    left: 50%;        
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    top: 100%;
+    -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+}
+.uarrow:hover{
+    transform: translate(-50%,-40%);
+}
+.uarrow:visited, .uarrow:visited, .uarrown:active {
+    color: black;
+}
+.nav ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    position:absolute;
+    width: 100%;
+    background-color: black;    
+    opacity: 1;
+    text-align: center;
+}
+.nav ul.sticky{
+    position: fixed;
+    opacity: 1;
+    top: 0px;
+    background-size: cover;
+    z-index: 1;
+    padding: 0;
+}
+.nav li{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: none;
+    display: inline-block;
+    margin-right: -4px;
+    width: 150px;
+}
+.nav a{ 
+    text-decoration: none;
+    color: white;
+    display: block;
+}  
+a:focus{
+    outline: 0;
+}
+.nav a:hover{
+    background-color: #262626;
+    color: white;
+}
+.nav a.active {
+    background-color: white;
+    color:black;
+}
+.intresseRow{
+    padding-top: 80px;        
+}
+.intressen {
+    padding-bottom: 50px;
+}
+
+.intressen{
+    border-top: solid;
+    border-top-width: 3px;
+    text-align: center;
+    border-top-color: blue: 
+}
+.Startdiv{
+    position: absolute;
+    top:110%;
+    margin-right: 15%;
+    margin-left: 15%;   
+    margin-bottom: 8%;
+    font-size: 18px;
+}
+.omText{
+    margin-right: 15%;
+    margin-left: 15%;    
+}
+.omRubrik{
+    padding-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* KUNSKAPs PAGE*/
+.KunskapsTop{
+    width: 100%;
+    text-align: center;    
+    display: inline-block; 
+    padding-top: 50px;   
+}
+.KunskapsRubrik{
+    font-size: 17px;
+    color: black;
+    font-family: Open Sans,sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.KunskapsText{
+    font-size: 17px;
+    color: black;
+    font-family: Open Sans,sans-serif;
+    font-weight: 100;
+    text-align: center;
+    width: 80%;
+    margin: 5px auto 0;
+}
+.KunskapsIkon{
+    font-size: 80px;
+}
+.KunskapMitt{
+    display: inline-block;
+    width: 100%;
+}
+.kunskap{
+    margin: 0px;
+}
+.kunskapsblock{
+    background-color: #045177;
+    color: white;
+    text-align: center;
+    padding-top: 10px;    
+    margin: 15px;
+}
+a.btnCV{
+    color: #045177;
+}
+a.btnCV:hover{
+    color: black;
+}
+
+/* KONTAKT */
+.kontaktsTop{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.textField{   
+    width: 450px;
+    height: 70px;
+    padding: 2%;
+    margin: 1% auto;
+    display: block;   
+}
+.textArea{
+    height: 152px;
+    width: 450px;
+    padding: 2%;
+    margin: 0 auto;
+    display: block;   
+}
+.formButton{
+    background: #045177;
+    height: 70px;
+    width: 450px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    margin: 1% auto;
+    display: block;
+    font-family: Open Sans,sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.KontaktBild{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    -webkit-transition: all 0.3s ease; /* Safari and Chrome */
+    -moz-transition: all 0.3s ease; /* Firefox */
+    -ms-transition: all 0.3s ease; /* IE 9 */
+    -o-transition: all 0.3s ease; /* Opera */
+    transition: all 0.3s ease;
+}
+.KontaktBild:hover{
+    -webkit-transform:scale(1.10); /* Safari and Chrome */
+    -moz-transform:scale(1.10); /* Firefox */
+    -ms-transform:scale(1.10); /* IE 9 */
+    -o-transform:scale(1.10); /* Opera */
+     transform:scale(1.10);
+}
+.kontaktText{
+    text-align: center;
+    padding-top: 30px;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+.kontaktInfo{
+    text-align: left;
+    padding-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .darrow{
+    display: none;
+    }
+    .uarrow{
+    display: none;
+    }
+    .nav ul{
+        top: 30%;
+    }
+    .nav li{
+        font-size: 15px;
+        width: 110px;
+    }
+    .background {
+        height: 30%;    
+    }
+    .logo {    
+        top:50%;
+        font-size:15px;
+        color: white;
+        border-width: 2px;
+        padding: 5px;
+    }
+    .logo h1{
+        font-size:10px;
+    }
+    .KontaktBild{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+    }
+    .Startdiv{
+        top:40%;
+        margin-right: 0%;
+        margin-left: 0%;
+    }
+    .omText, .kontaktInfo{
+        margin-right: 4%;
+        margin-left: 4%;    
+    }
+    .kontaktsTop{
+        margin-right: 0%;
+        margin-left: 0%;    
+    }
+    .textField, .textArea, .formButton{
+        width: 290px;
+    }
+    
+
+} /* MEDIA - IPHONE */
+
+@media only screen and (min-width : 601px) and (max-width : 1024px)  { 
+    .darrow{
+        display: none;
+    }
+    .uarrow{
+        display: none;
+    }
+    .nav ul{
+        top: 50%;
+    }
+    .background {
+        height: 50%;    
+    }
+    .logo {    
+        top:50%;
+        font-size:36px;
+        color: white;
+        border-width: 5px;
+        padding: 10px;
+    }
+    .logo h1{
+        font-size:25px;
+    }
+    .Startdiv{
+        top:60%;
+    }
+    .omText, .kontaktInfo{
+        margin-right: 4%;
+        margin-left: 4%;    
+    }
+
+}

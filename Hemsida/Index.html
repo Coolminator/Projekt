@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MainApp">
+<head>
+    <title>Carlos Soto</title>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="Scripts/MainApp.js"></script>    
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="CSS/Site.css" rel="stylesheet" type="text/css"/>
+ 
+    <script type="text/ng-template" id="Home.html"></script>
+    <script type="text/ng-template" id="About.html"></script>
+    <script type="text/ng-template" id="Contact.html"></script>
+</head>
+
+<body ng-controller="RouteCtrl">    
+          
+    <div >
+        <div ng-include="'/Home.html'" ng-show="homeVisible"></div>
+        <div ng-include="'/Contact.html'" ng-show="contactVisible"></div>
+        <div ng-include="'/Knowledge.html'" ng-show="knowledgeVisible"></div>
+    </div>
+        
+    <div class="background">
+        <video class="video" preload="auto" autoplay="true" loop="loop" muted="muted">
+            <source src="Images/Grey_loop.mp4" type="video/mp4">
+            Video is not supported.
+        </video>
+
+        <div class="logo">
+            Carlos Soto<h1>webbutvecklare</h1>    
+        </div>
+        <a href="" class="darrow" ><span class="glyphicon glyphicon-menu-down"></span></a>
+
+    </div>
+   
+    <div class="nav">
+        <ul id="menu">
+            <li><a ng-class="{ active: isActive('/Home') }" href="#/Home"><span class="glyphicon glyphicon-home"></span> Hem </a></li>
+            <li><a ng-class="{ active: isActive('/Knowledge') }" href="#/Knowledge"><span class="glyphicon glyphicon-briefcase"></span> Kunskaper</a></li>            
+            <li><a ng-class="{ active: isActive('/Contact') }" href="#/Contact"><span class="glyphicon glyphicon-info-sign"></span> Kontakt</a></li>     
+        </ul> 
+    </div>
+
+    <script type="text/ng-template" id="/Home.html">    <!-- HOME PAGE-->
+
+        <div class="Startdiv">       
+
+            <div   class="omRubrik">
+                <h2 >Om mig</h2>
+                <br>
+                <img class="KontaktBild" src="Images/Profilbild.png">
+            </div>
+            <br>
+            <p class="omText">
+                Hej!
+                Carlos Soto heter jag och är 24 år gammal. Jag är en nyutexaminerad systemvetare bosatt i Örebro.
+                Har du hamnat på den här sidan, antar jag att du – eller ditt företag – är på jakt efter en riktigt duktig webbutvecklare.<br>
+                <br>
+                Jag har studerat Systemvetenskap vid Örebro Universitet och är på jakt efter nya utmaningar.
+                Att jobba med systemutveckling, främst <strong>front-end</strong> utveckling och <strong>Angular JS</strong> är det bästa jag vet och är verkligen något jag vill arbeta med i framtiden.
+                <br><br>
+                Något jag ofta gör på fritiden är att spela fotboll, träna på gym, spela dataspel, titta på filmer och serier samt titta på engelsk och spanskt fotboll. Jag umgås med kompisar under helger och har under en längre tid även arbetat ideellt på Örebro universitets kårhus. 
+                <br><br>
+                Jag har alltid varit intresserad av fotboll ända sen jag var liten. Förutom att jag själv spelar fotboll så tittar jag även på fotboll på tv och följer varje säsong som går. Spansk fotboll är mitt brinnande intresse och jag har bl a rest till Spanien med familjen. Höjdpunkter från dessa resor är bl a se Ronaldinho (i Barcelona då) och Lionel Messi (19 år då) spela i samma match på Barcelonas hemmarena Camp Nou.
+            </p>
+                       
+            <div class="intresseRow">
+                <div class="col-md-3">
+                    <div class="intressen">
+                        <br>
+                        <p><strong>Serier jag kollar på</strong></p>
+                        <p>Game of thrones</p>
+                        <p>Westworld</p>
+                        <p>Walking Dead</p>   
+                    </div>
+                </div>
+                <div class="col-md-3">
+                   <div class="intressen">
+                    <br>
+                        <p><strong>Favoritlag jag följer</strong></p>
+                        <p>Sevilla</p>
+                        <p>Barcelona</p>
+                        <p>Villareal</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="intressen">
+                    <br>
+                        <p><strong>Tv/Data-spel jag spelar</strong></p>
+                        <p>FIFA</p>
+                        <p>World of Warcraft</p>
+                        <p>Counter-Strike</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="intressen">
+                    <br>
+                        <p><strong>Beroende av</strong></p>
+                        <p>Superhjälte-filmer</p>
+                        <p>Fotboll</p>
+                        <p>Ost</p>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+            <a href="" class="uarrow" ><span class="glyphicon glyphicon-menu-up"></span></a>
+            
+        </div>
+    </script> <!-- HOME PAGE END -->
+
+
+    <script type="text/ng-template" id="/Knowledge.html"> <!--KNOWLEDGE PAGE-->
+                
+        <div  class="Startdiv">       
+            <div class="KunskapsTop">
+                <div class="col-md-4">                    
+                    <div class="KunskapsIkon">
+                        <span class="glyphicon glyphicon-phone"></span>
+                    </div>
+                   
+                    <h3 class="KunskapsRubrik">
+                        Mobilt och responsiv
+                    </h3>
+                    <p class="KunskapsText">
+                       Innebär att layouten förändras beroende på vilken skärmstorlek och skärmupplösning som besökaren har.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                        <div class="KunskapsIkon">
+                            <span class="glyphicon glyphicon-wrench"></span>
+                        </div>
+                        <h3 class="KunskapsRubrik">
+                            Front-end utveckling
+                        </h3>
+                        <p class="KunskapsText">
+                            Jag håller koll på heta trender inom webben och ligger i framkant. Föredrar Angular JS (1.5) för front-end utveckling.
+                        </p>
+                </div>
+                <div class="col-md-4">
+                        <div class="KunskapsIkon">
+                            <span class="glyphicon glyphicon-dashboard"></span>
+                        </div>
+                        <h3 class="KunskapsRubrik">
+                            Agilt arbetssätt
+                        </h3>
+                        <p class="KunskapsText">
+                            Fördelen med ett agilt arbetssätt är att man är öppen för förändrade krav under utvecklingens gång. 
+                        </p>
+                </div>
+            </div>
+            
+            <div class="omRubrik">
+                <h2 >KUNSKAPER</h2>
+                <br>              
+            </div>
+
+            <div class="KunskapMitt">
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div    class="kunskapsblock">
+                        <p class="kunskap">
+                            ANGULAR JS                        
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">75%
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            RESTful API
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">75%
+                        </div>                        
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            HTML5
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">80%
+                        </div>    
+                    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            CSS3
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">80%
+                        </div>    
+                    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            JAVASCRIPT
+                        </p>
+
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">60%
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            JQUERY
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%">50%
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            BOOTSTRAP
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">80%
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            SQL
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">60%
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            VISUAL STUDIO
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">75%
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            TFS
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">75%
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            C#
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">40%
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            ASP.NET
+                        </p>
+                        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">40%
+                        </div>    
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            SCRUM
+                        </p>
+                         
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            XP
+                        </p>
+
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            RUP
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3  col-sm-4 col-xs-12">
+                    <div class="kunskapsblock">
+                        <p class="kunskap">
+                            UML
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- KUNSKAPSMITT END-->
+
+            <div class="KunskapsBottom">
+                <div class="intresseRow">
+                    <div class="CVrow">
+                       <div class="intressen">
+                            <br>Vill ni kika närmare på mina tidigare arbeten kan ni kika det nedan:
+                            <p class="intresseLista">
+                                <a href="Pages/Curriculum Vitae.pdf" target="_blank" class="btnCV"><strong>CV (öppnas i nytt fönster)</strong></a>
+                            </p>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <a href="" class="uarrow" ><span class="glyphicon glyphicon-menu-up"></span></a>
+        </div>
+    </script>   <!--KUNSKAP SCRIPT END-->
+
+    <script type="text/ng-template" id="/Contact.html"> <!--CONTACT PAGE-->
+          
+       <div class="Startdiv">
+
+            <div class="kontaktsTop">
+            
+                <div class="omRubrik">
+                    <h2 >Kontakt</h2>
+                    <br>
+                    <img class="KontaktBild"src="Images/ProfilCarlos.png" height="200px" width="200px">
+                    <br>              
+                </div>
+
+                <p class="kontaktText">
+                    <strong>Carlos Soto (24år)</strong>
+                    <br><br>
+                    <strong>Mobiltelefon:</strong><br> 070 429 23 73<br>
+                    <br>
+                    <strong>E-mail adress:</strong><br>
+                    carlos.soto_92@hotmail.com<br>
+                    <br><strong>Adress:</strong><br>
+                    Salsmästaregatan 26<br> 702 83 Örebro
+                    <br><br>
+                </p>
+                    
+                <div class="kontaktInfo">
+                    <strong>För att kontakta mig eller har frågor och funderingar,  använd i första fall min email eller direkt via kontaktformuläret nedan. Tveka inte att skicka ett meddelande, jag återkommer så snabbt jag kan! (fungerar ej lokalt)</strong>
+                </div>
+
+                <form class="form" method="POST" name="form" id="form">
+
+                    <input ng-model="Name" type="text" name="namn" placeholder="Namn" id="textField_name" class="textField" required data-errormessage="Var vänlig skriv ditt namn här." />
+                    <input ng-model="Email" type="text" name="email" placeholder="Mailadress" id="textField_email" class="textField" data-errormessage="Var vänlig skriv din E-mail här." required pattern="[a-zA-ZÅåÄäÖö0-9!#$%&'*+/=?^_`{|}~.-]+@[a-zA-ZÅåÄäÖö0-9-]+(\.[a-zÅåÄäÖö0-9-]+)" />
+                    <textarea ng-model="Content" class="textArea" name="meddelande" placeholder="Meddelande" rows="5" cols="10" required></textarea>
+                    
+                    <input ng-click="sendMail()" type="submit" name="skicka" class=" transition formButton" type="submit" value="Skicka" disabled>                    
+                </form>
+           
+                <div class="KunskapsBottom">
+                    <div class="intresseRow">
+                        <div class="CVrow">
+                            <div class="intressen">
+                                <br>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="uarrow" ><span class="glyphicon glyphicon-menu-up"></span></a>
+        </div>
+
+    </script> <!-- CONTACT PAGE END-->
+
+</body>
+</html>
