@@ -7,15 +7,15 @@ Detta projekt är min egendesignade hemsida. Det går utmärkt att ladda ner map
 Tekniker: HTML5, CSS3, Javascript, Jquery och AngularJS.
 
 
-# Projekt: Automatiserad RSS läsare
-blabla
-Tekniker:
+# Projekt: RSS läsare
+Uppgiften var att skapa en automatiserad RSS-läsare som används för att prenumerera på podcasts. Utvecklingsmiljön var Visual Studio 2013 och projektet strukturerades i tre-lagersarkitektur.
+Tekniker: C#, XML, och Team Foundation Server.
 
 # Projekt: Dejtingsida
 Under min utbildning hade vi som projekt att bygga en dejtingsajt i ASP.NET och MVC. Visual Studio 2013 användes som utvecklingsmiljö. Filen finns att ladda ner som zip-fil och för att starta den behövs visual studio. 
 Användarnamn för att logga in i systemet är Carlos92 och lösenordet är: lösenord!
 
-Tekniker: ASP.NET, MVC, undantagshantering, SQL-databas, APIController, 
+Tekniker: ASP.NET, MVC, undantagshantering, SQL-databas, APIController och Team Foundation Server..
 
 
 # Projekt: Hemsida (Fungerande Web Service)
