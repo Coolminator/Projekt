@@ -12,8 +12,8 @@ blabla
 Tekniker:
 
 # Projekt: Dejtingsida
-blabla
-Tekniker:
+Under min utbildning hade vi som projekt att bygga en dejtingsajt i ASP.NET och MVC. Visual Studio 2013 användes som utvecklingsmiljö. Filen finns att ladda ner som zip-fil och för att starta den behövs visual studio. Användarnamn för att logga in är Carlos92 och lösenordet är: lösenord!
+Tekniker: ASP.NET, MVC, undantagshantering, SQL-databas, APIController, 
 
 
 # Projekt: Hemsida (Fungerande Web Service)
