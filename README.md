@@ -2,6 +2,8 @@
 Hej! Carlos Soto heter jag och är 24 år gammal. Jag är en nyutexaminerad systemvetare bosatt i Örebro och jag söker jobb som webbutvecklare. 
 Tekniker jag främst behärskar är: C#, ASP .NET, MVC, AngularJS, HTML5, CSS3, Jquery, Javascript, REST, WEb Service samt Web APi 2.
 
+Visual Studio Projekten är för stora för att visas här. För att köra projektet måste du först ladda ner rar/zip filen på din dator och sedan packa upp och öppna med Visual studio.
+
 # Hobbyprojekt: Hemsida
 Detta projekt är min egendesignade hemsida. Det går utmärkt att ladda ner mappen och köra lokalt till 100%. Eftersom Web-tjänster inte fungerar lokalt så har jag kommenterat bort mycket angular kod som utnyttjar web-tjänster, bl a ng-view och det är likadant för kontaktformulären, angular-koden är bortkommenterad.
 
