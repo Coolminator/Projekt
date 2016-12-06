@@ -12,7 +12,7 @@ Tekniker: AngularJS, HTML5, CSS3, Javascript och Jquery.
 # Hobbyprojekt: Hemsida v.2 (Visual Studio)
 Detta projekt är precis som min egendesignade hemsida ovan. Den använder sig utav AngularJS kod som fungerar med Web Service, t ex ng-view och API hämtningar. Kontaktformulären fungerar också till 100%. En databas har lagts till för att visa på att jag kan hantera RESTful Services med AngularJS. Sidan skapades i Visual Studio. 
 
-Tekniker: AngularJS, HTML5, CSS3, Javascript, Jquery, Web Api 2, REST och SQL Databas.
+Tekniker: C#, ASP .NET, MVC, AngularJS, HTML5, CSS3, Javascript, Jquery, Web Api 2, REST och SQL Databas.
 
 # SkolProjekt: RSS läsare (Visual Studio)
 Uppgiften var att skapa en automatiserad RSS-läsare som används för att prenumerera på podcasts. Utvecklingsmiljön var Visual Studio 2013 och projektet strukturerades i tre-lagersarkitektur.
